@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formspree テスト</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+        div { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #0066FF; color: white; padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Formspree テストフォーム</h1>
+    <p style="color: #666;">このフォームでテスト送信してください</p>
+    
+    <!-- 方法1: フォームID使用 -->
+    <h2>方法1: フォームID</h2>
+    <form action="https://formspree.io/f/xnjjaqqk" method="POST">
+        <div>
+            <label>名前:</label>
+            <input type="text" name="name" required>
+        </div>
+        
+        <div>
+            <label>メールアドレス:</label>
+            <input type="email" name="email" required>
+        </div>
+        
+        <div>
+            <label>メッセージ:</label>
+            <textarea name="message" required rows="4">これはテスト送信です</textarea>
+        </div>
+        
+        <button type="submit">送信（方法1）</button>
+    </form>
+    
+    <hr style="margin: 40px 0;">
+    
+    <!-- 方法2: メールアドレス直接指定（バックアップ） -->
+    <h2>方法2: メールアドレス直接指定</h2>
+    <p style="color: #666; font-size: 14px;">
+        ⚠️ 下の「あなたのメールアドレス」を実際のアドレスに置き換えてテストしてください
+    </p>
+    <form action="https://formspree.io/あなたのメールアドレス@example.com" method="POST">
+        <div>
+            <label>名前:</label>
+            <input type="text" name="name" required>
+        </div>
+        
+        <div>
+            <label>メールアドレス:</label>
+            <input type="email" name="email" required>
+        </div>
+        
+        <div>
+            <label>メッセージ:</label>
+            <textarea name="message" required rows="4">これはテスト送信です（方法2）</textarea>
+        </div>
+        
+        <button type="submit">送信（方法2）</button>
+    </form>
+    
+    <hr style="margin: 40px 0;">
+    
+    <h2>トラブルシューティング</h2>
+    <ul style="line-height: 1.8;">
+        <li>方法1でエラー → フォームIDが間違っている可能性</li>
+        <li>方法2でエラー → メールアドレスを確認</li>
+        <li>どちらもエラー → Formspreeアカウントの問題の可能性</li>
+    </ul>
+</body>
+</html>

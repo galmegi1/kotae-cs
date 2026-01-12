@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의 - Kotae CS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <i class="fas fa-comments"></i>
+                    <span>Kotae CS</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="service.html">서비스 내용</a></li>
+                    <li><a href="pricing.html">요금 플랜</a></li>
+                    <li><a href="about.html">회사 소개</a></li>
+                    <li><a href="contact.html" class="cta-button active">무료 상담 예약</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>문의</h1>
+            <p>첫 상담은 무료입니다. 부담 없이 상담해 주세요.</p>
+        </div>
+    </section>
+
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
+                <!-- フォーム -->
+                <div>
+                    <h2 style="font-size: 2rem; margin-bottom: 30px;">무료 상담 폼</h2>
+                    <!-- Formspree版（現在設定済み） -->
+                    <form id="contactForm" action="https://formspree.io/f/xnjjaqqk" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+                    
+                    <!-- Netlify版（Netlifyにデプロイ後、上のFormspree版をコメントアウトしてこちらを使用） -->
+                    <!-- 
+                    <form id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" style="display: flex; flex-direction: column; gap: 20px;">
+                        <input type="hidden" name="form-name" value="contact">
+                    -->
+                    
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">회사명 <span style="color: red;">*</span></label>
+                            <input type="text" name="company" required style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem;">
+                        </div>
+
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">성함 <span style="color: red;">*</span></label>
+                            <input type="text" name="name" required style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem;">
+                        </div>
+
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">이메일 주소 <span style="color: red;">*</span></label>
+                            <input type="email" name="email" required style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem;">
+                        </div>
+
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">전화번호</label>
+                            <input type="tel" name="phone" style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem;">
+                        </div>
+
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">업종 <span style="color: red;">*</span></label>
+                            <select name="industry" required style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem;">
+                                <option value="">선택해 주세요</option>
+                                <option value="K-beauty（화장품）">K-beauty (화장품)</option>
+                                <option value="K-POP·엔터테인먼트">K-POP·엔터테인먼트</option>
+                                <option value="K-food（식품）">K-food (식품)</option>
+                                <option value="패션">패션</option>
+                                <option value="EC·통판">EC·통판</option>
+                                <option value="기타">기타</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">희망 플랜</label>
+                            <select name="plan" style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem;">
+                                <option value="">아직 정하지 않았음</option>
+                                <option value="Starter">Starter (월 80만원)</option>
+                                <option value="Business">Business (월 200만원)</option>
+                                <option value="Premium">Premium (월 550만원)</option>
+                                <option value="커스터마이징">커스터마이징 희망</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">현재 월간 문의 건수 (개산)</label>
+                            <select name="volume" style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem;">
+                                <option value="">선택해 주세요</option>
+                                <option value="0-50건">0-50건</option>
+                                <option value="51-100건">51-100건</option>
+                                <option value="101-200건">101-200건</option>
+                                <option value="201-500건">201-500건</option>
+                                <option value="501건 이상">501건 이상</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">상담 내용 <span style="color: red;">*</span></label>
+                            <textarea name="message" required rows="6" style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; resize: vertical;" placeholder="현재의 과제, 도입 시기, 예산 등을 부담 없이 적어주세요."></textarea>
+                        </div>
+
+                        <!-- Formspree設定用の隠しフィールド -->
+                        <input type="hidden" name="_subject" value="【Kotae CS】신규 문의">
+                        <input type="hidden" name="_next" value="contact.html?success=true">
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> 제출
+                        </button>
+                    </form>
+
+                    <div id="formMessage" style="margin-top: 20px; padding: 15px; border-radius: 8px; display: none;"></div>
+                    
+                    <!-- 送信成功時のメッセージ表示 -->
+                    <script>
+                        // URLパラメータで送信成功を判定
+                        const urlParams = new URLSearchParams(window.location.search);
+                        if (urlParams.get('success') === 'true') {
+                            const formMessage = document.getElementById('formMessage');
+                            formMessage.style.display = 'block';
+                            formMessage.style.background = '#d4edda';
+                            formMessage.style.color = '#155724';
+                            formMessage.style.border = '1px solid #c3e6cb';
+                            formMessage.innerHTML = `
+                                <i class="fas fa-check-circle"></i> 
+                                <strong>제출 완료했습니다!</strong><br>
+                                24시간 이내에 이메일로 회신드립니다.<br>
+                                이메일이 도착하지 않을 경우 스팸 메일 폴더를 확인해 주세요.
+                            `;
+                            // URLから?success=trueを削除
+                            window.history.replaceState({}, document.title, window.location.pathname);
+                        }
+                    </script>
+                </div>
+
+                <!-- サイドバー情報 -->
+                <div>
+                    <div style="background: var(--bg-light); padding: 40px; border-radius: 12px; margin-bottom: 30px;">
+                        <h3 style="margin-bottom: 20px;"><i class="fas fa-calendar-check"></i> 상담 흐름</h3>
+                        <ol style="padding-left: 20px; line-height: 2;">
+                            <li>폼 제출 후 24시간 이내에 이메일로 회신드립니다.</li>
+                            <li>Zoom 무료 상담 일정을 조율합니다 (30분~1시간).</li>
+                            <li>현재의 과제를 경청하고 최적의 플랜을 제안합니다.</li>
+                            <li>견적서를 제출하고 검토해 주십시오.</li>
+                        </ol>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: var(--white); padding: 40px; border-radius: 12px; margin-bottom: 30px;">
+                        <h3 style="margin-bottom: 20px;"><i class="fas fa-gift"></i> 첫 계약 특전</h3>
+                        <ul style="list-style: none; padding: 0; line-height: 2;">
+                            <li><i class="fas fa-check"></i> Starter 플랜：첫 달 무료</li>
+                            <li><i class="fas fa-check"></i> Business / Premium：첫 달 50% OFF</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: var(--bg-light); padding: 40px; border-radius: 12px;">
+                        <h3 style="margin-bottom: 20px;"><i class="fas fa-shield-alt"></i> 자주 묻는 질문</h3>
+                        <details style="margin-bottom: 15px; cursor: pointer;">
+                            <summary style="font-weight: 600; padding: 10px 0;">계약 기간 제한이 있나요?</summary>
+                            <p style="padding: 10px 0; color: var(--text-gray);">최소 계약 기간은 3개월입니다. 그 후는 1개월 단위로 갱신 가능합니다.</p>
+                        </details>
+                        <details style="margin-bottom: 15px; cursor: pointer;">
+                            <summary style="font-weight: 600; padding: 10px 0;">중간에 플랜 변경이 가능한가요?</summary>
+                            <p style="padding: 10px 0; color: var(--text-gray);">네, 문의 건수 증가에 따라 언제든 플랜을 업그레이드할 수 있습니다.</p>
+                        </details>
+                        <details style="margin-bottom: 15px; cursor: pointer;">
+                            <summary style="font-weight: 600; padding: 10px 0;">Zendesk가 없어도 괜찮나요?</summary>
+                            <p style="padding: 10px 0; color: var(--text-gray);">네, Zendesk 셋업부터 대응합니다. 초기 비용에 포함되어 있습니다.</p>
+                        </details>
+                        <details style="cursor: pointer;">
+                            <summary style="font-weight: 600; padding: 10px 0;">일본어를 할 수 있는 직원이 없어도 괜찮나요?</summary>
+                            <p style="padding: 10px 0; color: var(--text-gray);">네, 저희가 일본 고객 대응을 모두 진행합니다. 귀사는 한국어만으로 괜찮습니다.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-comments"></i>
+                        <span>Kotae CS</span>
+                    </div>
+                    <p>모든 질문에, 답을 드립니다.</p>
+                    <p class="footer-tagline">Every question, answered.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>서비스</h4>
+                    <ul>
+                        <li><a href="service.html">서비스 내용</a></li>
+                        <li><a href="pricing.html">요금 플랜</a></li>
+                        <li><a href="about.html">회사 소개</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>문의</h4>
+                    <ul>
+                        <li><a href="contact.html">무료 상담 예약</a></li>
+                        <li><a href="contact.html">문의 폼</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>소재지</h4>
+                    <p>대한민국 경기도 분당구<br>(大韓民国 京畿道 盆唐区)</p>
+                    <p style="font-size: 0.9em; margin-top: 10px;">※리모트워크 전문</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kotae CS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
