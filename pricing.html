@@ -1,686 +1,685 @@
-     1	<!DOCTYPE html>
-     2	<html lang="ko">
-     3	<head>
-     4	    <meta charset="UTF-8">
-     5	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     6	    <title>요금 플랜 - Kotae CS</title>
-     7	    <link rel="stylesheet" href="css/style.css">
-     8	    <link rel="stylesheet" href="css/pricing.css">
-     9	    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    10	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    11	</head>
-    12	<body>
-    13	    <header class="header">
-    14	        <div class="container">
-    15	            <nav class="nav">
-    16	                <div class="logo">
-    17	                    <i class="fas fa-comments"></i>
-    18	                    <span>Kotae CS</span>
-    19	                </div>
-    20	                <ul class="nav-menu">
-    21	                    <li><a href="index.html">홈</a></li>
-    22	                    <li><a href="service.html">서비스 내용</a></li>
-    23	                    <li><a href="pricing.html" class="active">요금 플랜</a></li>
-    24	                    <li><a href="about.html">회사 소개</a></li>
-    25	                    <li><a href="contact.html" class="cta-button">무료 상담 예약</a></li>
-    26	                </ul>
-    27	                <div class="hamburger">
-    28	                    <span></span>
-    29	                    <span></span>
-    30	                    <span></span>
-    31	                </div>
-    32	            </nav>
-    33	        </div>
-    34	    </header>
-    35	
-    36	    <section class="page-hero">
-    37	        <div class="container">
-    38	            <h1>요금 플랜</h1>
-    39	            <p>귀사의 규모와 성장 단계에 맞춰 선택할 수 있는 5가지 플랜</p>
-    40	        </div>
-    41	    </section>
-    42	
-    43	    <section class="pricing-campaign">
-    44	        <div class="container">
-    45	            <div class="campaign-box">
-    46	                <i class="fas fa-gift"></i>
-    47	                <h3>첫 계약 특전</h3>
-    48	                <p>Business 이상 플랜 계약 시 첫 달 50% OFF</p>
-    49	            </div>
-    50	        </div>
-    51	    </section>
-    52	
-    53	    <section class="pricing-plans">
-    54	        <div class="container">
-    55	            <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-    56	                <!-- Starterプラン -->
-    57	                <div class="pricing-card">
-    58	                    <div class="pricing-header">
-    59	                        <h3>Starter</h3>
-    60	                        <p class="pricing-target">스타트업 대상</p>
-    61	                    </div>
-    62	                    <div class="pricing-price">
-    63	                        <span class="amount">80만원</span>
-    64	                        <span class="period">/월</span>
-    65	                    </div>
-    66	                    <p class="pricing-initial">초기 비용: 50만원</p>
-    67	                    
-    68	                    <div class="pricing-features">
-    69	                        <h4><i class="fas fa-check-circle"></i> 대응 건수</h4>
-    70	                        <ul>
-    71	                            <li>월 80건까지 (이메일·채팅 합산)</li>
-    72	                            <li>초과분: 1건당 3,500원</li>
-    73	                        </ul>
-    74	
-    75	                        <h4><i class="fas fa-check-circle"></i> 체제</h4>
-    76	                        <ul>
-    77	                            <li>공유 담당자 (3-5개 기업 담당)</li>
-    78	                            <li>대응 품질 보증</li>
-    79	                        </ul>
-    80	
-    81	                        <h4><i class="fas fa-check-circle"></i> 리포트</h4>
-    82	                        <ul>
-    83	                            <li>주간 리포트 (한국어·기본 항목)</li>
-    84	                            <li>· 대응 건수</li>
-    85	                            <li>· 평균 대응 시간</li>
-    86	                            <li>· VOC 공유</li>
-    87	                        </ul>
-    88	
-    89	                        <h4><i class="fas fa-check-circle"></i> FAQ</h4>
-    90	                        <ul>
-    91	                            <li>10건까지 작성·관리</li>
-    92	                        </ul>
-    93	
-    94	                        <h4><i class="fas fa-check-circle"></i> 시스템</h4>
-    95	                        <ul>
-    96	                            <li>Zendesk 기본 셋업</li>
-    97	                            <li>· 티켓 관리</li>
-    98	                            <li>· 이메일 통합</li>
-    99	                            <li>· 기본 리포트 기능</li>
-   100	                        </ul>
-   101	
-   102	                        <h4><i class="fas fa-check-circle"></i> 전문 지원</h4>
-   103	                        <ul>
-   104	                            <li>기본 가이드만 제공</li>
-   105	                            <li>에스컬레이션: 불가</li>
-   106	                        </ul>
-   107	
-   108	                        <h4><i class="fas fa-times-circle" style="color: #999;"></i> 대응 불가</h4>
-   109	                        <ul style="color: #999;">
-   110	                            <li>클레임 대응·환불 협상</li>
-   111	                            <li>법적 문제 (알레르기 등)</li>
-   112	                            <li>약사법 관련 판단</li>
-   113	                            <li>미디어·SNS 대응</li>
-   114	                            <li>고액 환불 (5만원 이상)</li>
-   115	                        </ul>
-   116	                    </div>
-   117	
-   118	                    <a href="contact.html" class="btn btn-outline btn-large">무료 상담 예약</a>
-   119	                </div>
-   120	
-   121	                <!-- Businessプラン（人気） -->
-   122	                <div class="pricing-card featured">
-   123	                    <div class="badge-popular">인기 No.1</div>
-   124	                    <div class="pricing-header">
-   125	                        <h3>Business</h3>
-   126	                        <p class="pricing-target">성장 중인 기업 대상</p>
-   127	                    </div>
-   128	                    <div class="pricing-price">
-   129	                        <span class="amount">180만원</span>
-   130	                        <span class="period">/월</span>
-   131	                    </div>
-   132	                    <p class="pricing-initial">초기 비용: 100만원</p>
-   133	                    
-   134	                    <div class="pricing-features">
-   135	                        <h4><i class="fas fa-check-circle"></i> 대응 건수</h4>
-   136	                        <ul>
-   137	                            <li>월 200건까지 (이메일·SNS 합산)</li>
-   138	                            <li><strong>내역 예시:</strong></li>
-   139	                            <li>· 이메일: 최대 150건</li>
-   140	                            <li>· SNS (Instagram/LINE 등): 최대 50건</li>
-   141	                            <li>※ 유연하게 배분 가능</li>
-   142	                            <li>초과분: 1건당 3,500원</li>
-   143	                        </ul>
-   144	
-   145	                        <h4><i class="fas fa-check-circle"></i> 체제</h4>
-   146	                        <ul>
-   147	                            <li>준전담 담당자 (2-3개 기업 담당)</li>
-   148	                        </ul>
-   149	
-   150	                        <h4><i class="fas fa-check-circle"></i> 리포트</h4>
-   151	                        <ul>
-   152	                            <li>주간 리포트 (상세판·한국어)</li>
-   153	                            <li>· 대응 건수 (채널별)</li>
-   154	                            <li>· 대응 시간 (평균)</li>
-   155	                            <li>· VOC 공유</li>
-   156	                            <li>· 고객 만족도</li>
-   157	                            <li>· 자주 묻는 질문 TOP5</li>
-   158	                            <li>· 개선 제안</li>
-   159	                            <li><strong>월간 개선 미팅 (1시간·온라인)</strong></li>
-   160	                            <li>· 전월 리뷰</li>
-   161	                            <li>· KPI 확인</li>
-   162	                            <li>· 개선 제안 논의</li>
-   163	                        </ul>
-   164	
-   165	                        <h4><i class="fas fa-check-circle"></i> FAQ</h4>
-   166	                        <ul>
-   167	                            <li>30건까지 작성·관리</li>
-   168	                            <li>카테고리 분류 대응</li>
-   169	                        </ul>
-   170	
-   171	                        <h4><i class="fas fa-check-circle"></i> 대응 시간</h4>
-   172	                        <ul>
-   173	                            <li>평일 9:00-19:00 (10시간)</li>
-   174	                            <li>토·일·공휴일: 휴무</li>
-   175	                        </ul>
-   176	
-   177	                        <h4><i class="fas fa-check-circle"></i> 시스템</h4>
-   178	                        <ul>
-   179	                            <li>Zendesk 기본 셋업</li>
-   180	                            <li>· 티켓 관리</li>
-   181	                            <li>· 이메일 통합</li>
-   182	                            <li>· 기본 리포트 기능</li>
-   183	                            <li>· 고객 만족도 조사 자동 발송</li>
-   184	                        </ul>
-   185	
-   186	                        <h4><i class="fas fa-check-circle"></i> 전문 지원</h4>
-   187	                        <ul>
-   188	                            <li>기본적인 에스컬레이션 대응</li>
-   189	                            <li>약사법 대응: 불가</li>
-   190	                            <li>상급자 대응: 월 5건까지 무료 (이메일 대응)</li>
-   191	                        </ul>
-   192	                    </div>
-   193	
-   194	                    <a href="contact.html" class="btn btn-primary btn-large">무료 상담 예약</a>
-   195	                </div>
-   196	
-   197	                <!-- Premiumプラン -->
-   198	                <div class="pricing-card">
-   199	                    <div class="pricing-header">
-   200	                        <h3>Premium</h3>
-   201	                        <p class="pricing-target">본격 전개 기업 대상</p>
-   202	                    </div>
-   203	                    <div class="pricing-price">
-   204	                        <span class="amount">450만원</span>
-   205	                        <span class="period">/월</span>
-   206	                    </div>
-   207	                    <p class="pricing-initial">초기 비용: 200만원</p>
-   208	                    
-   209	                    <div class="pricing-features">
-   210	                        <h4><i class="fas fa-check-circle"></i> 대응 건수</h4>
-   211	                        <ul>
-   212	                            <li><strong>월 600건까지 (전체 채널 합산)</strong></li>
-   213	                            <li><strong>내역 예시:</strong></li>
-   214	                            <li>· 이메일: 최대 400건</li>
-   215	                            <li>· 채팅: 최대 150건</li>
-   216	                            <li>· SNS: 최대 100건</li>
-   217	                            <li>※ 유연하게 배분 가능</li>
-   218	                            <li>초과분: 1건당 3,000원</li>
-   219	                        </ul>
-   220	
-   221	                        <h4><i class="fas fa-check-circle"></i> 체제</h4>
-   222	                        <ul>
-   223	                            <li><strong>전담 담당자 1명 배치</strong></li>
-   224	                            <li>· 귀사 전용 담당자</li>
-   225	                            <li>· 노하우 축적 가능</li>
-   226	                        </ul>
-   227	
-   228	                        <h4><i class="fas fa-check-circle"></i> 리포트</h4>
-   229	                        <ul>
-   230	                            <li>주간 리포트 (상세 분석·한국어)</li>
-   231	                            <li>· 모든 Business 항목</li>
-   232	                            <li>· 트렌드 분석</li>
-   233	                            <li>· 고객 세그먼트별 분석</li>
-   234	                            <li><strong>월간 상세 분석 리포트</strong></li>
-   235	                            <li>· KPI 달성 현황</li>
-   236	                            <li>· 개선 시책의 효과 측정</li>
-   237	                            <li>· 다음 달 전략 제안</li>
-   238	                            <li><strong>월간 전략 미팅</strong></li>
-   239	                            <li>· 전월 리뷰</li>
-   240	                            <li>· KPI 확인</li>
-   241	                            <li>· 개선 제안 논의</li>
-   242	                        </ul>
-   243	
-   244	                        <h4><i class="fas fa-check-circle"></i> FAQ</h4>
-   245	                        <ul>
-   246	                            <li>50건까지 작성·관리</li>
-   247	                            <li>업데이트: 무제한·무료</li>
-   248	                            <li>카테고리 분류</li>
-   249	                            <li>FAQ 분석·리포트 발송 (월 1회)</li>
-   250	                        </ul>
-   251	
-   252	                        <h4><i class="fas fa-check-circle"></i> 대응 시간</h4>
-   253	                        <ul>
-   254	                            <li>평일 9:00-21:00 (12시간)</li>
-   255	                            <li>토요일 10:00-18:00 (8시간)</li>
-   256	                            <li>일·공휴일: 휴무</li>
-   257	                        </ul>
-   258	
-   259	                        <h4><i class="fas fa-check-circle"></i> 시스템</h4>
-   260	                        <ul>
-   261	                            <li>Zendesk + 고급 자동화</li>
-   262	                            <li>· AI 자동 응답 (기본)</li>
-   263	                            <li>· 트리거 무제한</li>
-   264	                            <li>· 커스텀 대시보드</li>
-   265	                            <li>· 고객 만족도 조사 자동 발송</li>
-   266	                            <li>· SLA 관리</li>
-   267	                        </ul>
-   268	
-   269	                        <h4><i class="fas fa-check-circle"></i> 전문 지원</h4>
-   270	                        <ul>
-   271	                            <li><strong>상급자 대응 (무제한)</strong></li>
-   272	                            <li>· 클레임 대응</li>
-   273	                            <li>· 환불 협상</li>
-   274	                            <li>· 경우에 따라 전화 대응 가능</li>
-   275	                        </ul>
-   276	
-   277	                        <h4><i class="fas fa-check-circle"></i> 추가 서비스</h4>
-   278	                        <ul>
-   279	                            <li>VOC 분석</li>
-   280	                            <li>· 월간 리포트로 고객의 목소리 시각화</li>
-   281	                            <li>· 마케팅 인사이트 제공</li>
-   282	                        </ul>
-   283	                    </div>
-   284	
-   285	                    <a href="contact.html" class="btn btn-outline btn-large">무료 상담 예약</a>
-   286	                </div>
-   287	
-   288	                <!-- Premium Plusプラン -->
-   289	                <div class="pricing-card">
-   290	                    <div class="pricing-header">
-   291	                        <h3>Premium Plus</h3>
-   292	                        <p class="pricing-target">대규모 전개 기업 대상</p>
-   293	                    </div>
-   294	                    <div class="pricing-price">
-   295	                        <span class="amount">750만원</span>
-   296	                        <span class="period">/월</span>
-   297	                    </div>
-   298	                    <p class="pricing-initial">초기 비용: 250만원</p>
-   299	                    
-   300	                    <div class="pricing-features">
-   301	                        <h4><i class="fas fa-check-circle"></i> 대응 건수</h4>
-   302	                        <ul>
-   303	                            <li><strong>월 1,200건까지 (전체 채널 합산)</strong></li>
-   304	                            <li>※ 완전히 유연한 배분</li>
-   305	                            <li>초과분: 1건당 2,500원</li>
-   306	                        </ul>
-   307	
-   308	                        <h4><i class="fas fa-check-circle"></i> 체제</h4>
-   309	                        <ul>
-   310	                            <li><strong>전담 담당자 1-2명 배치</strong></li>
-   311	                            <li>· 메인 담당자 1명</li>
-   312	                            <li>· 서브 담당자 1명 (휴가·성수기 대응)</li>
-   313	                        </ul>
-   314	
-   315	                        <h4><i class="fas fa-check-circle"></i> 리포트</h4>
-   316	                        <ul>
-   317	                            <li><strong>일간 리포트 (리얼타임)</strong></li>
-   318	                            <li>· 당일 대응 건수</li>
-   319	                            <li>· 미대응 티켓</li>
-   320	                            <li>· 긴급 안건</li>
-   321	                            <li><strong>주간 리포트 (상세 분석)</strong></li>
-   322	                            <li>· Premium 내용 모두</li>
-   323	                            <li><strong>월간 전략 리포트</strong></li>
-   324	                            <li>· Premium 내용 모두</li>
-   325	                            <li><strong>월간 전략 미팅</strong></li>
-   326	                            <li>· Premium 내용 모두</li>
-   327	                        </ul>
-   328	
-   329	                        <h4><i class="fas fa-check-circle"></i> FAQ</h4>
-   330	                        <ul>
-   331	                            <li>100건까지 작성·관리</li>
-   332	                            <li>업데이트: 무제한·무료</li>
-   333	                            <li>동영상 FAQ 제작 지원 (월 2개까지)</li>
-   334	                        </ul>
-   335	
-   336	                        <h4><i class="fas fa-check-circle"></i> 대응 시간</h4>
-   337	                        <ul>
-   338	                            <li>평일 9:00-21:00 (12시간)</li>
-   339	                            <li>토요일 10:00-18:00 (8시간)</li>
-   340	                            <li>일·공휴일: 긴급 대응만 (추가 요금 없음)</li>
-   341	                        </ul>
-   342	
-   343	                        <h4><i class="fas fa-check-circle"></i> 시스템</h4>
-   344	                        <ul>
-   345	                            <li>Zendesk + AI 통합 + 커스텀 대시보드</li>
-   346	                            <li>· AI 자동 응답 (고급) ← Premium보다 고급</li>
-   347	                            <li>· 챗봇 설정 지원</li>
-   348	                            <li>· 예측 분석 (문의 증가 예측)</li>
-   349	                            <li>· 커스텀 리포트 제작 (월 3개까지)</li>
-   350	                            <li>· Premium 내용 모두</li>
-   351	                        </ul>
-   352	
-   353	                        <h4><i class="fas fa-check-circle"></i> 전문 지원</h4>
-   354	                        <ul>
-   355	                            <li>· Premium 내용 모두</li>
-   356	                        </ul>
-   357	
-   358	                        <h4><i class="fas fa-check-circle"></i> 추가 서비스</h4>
-   359	                        <ul>
-   360	                            <li>· Premium 내용 모두</li>
-   361	                        </ul>
-   362	                    </div>
-   363	
-   364	                    <a href="contact.html" class="btn btn-outline btn-large">무료 상담 예약</a>
-   365	                </div>
-   366	
-   367	                <!-- Enterpriseプラン -->
-   368	                <div class="pricing-card" style="border: 3px solid var(--primary-color);">
-   369	                    <div class="pricing-header">
-   370	                        <h3>Enterprise</h3>
-   371	                        <p class="pricing-target">완전 커스터마이징</p>
-   372	                    </div>
-   373	                    <div class="pricing-price">
-   374	                        <span class="amount" style="font-size: 1.8rem;">1,200만원~</span>
-   375	                    </div>
-   376	                    <p class="pricing-initial">초기 비용: 별도 상담</p>
-   377	                    
-   378	                    <div class="pricing-features">
-   379	                        <h4><i class="fas fa-check-circle"></i> 대응 건수</h4>
-   380	                        <ul>
-   381	                            <li><strong>월 1,500건 이상 (완전 무제한도 상담 가능)</strong></li>
-   382	                            <li>모든 채널 대응:</li>
-   383	                            <li>· 이메일·채팅·SNS</li>
-   384	                            <li>· 라이브 챗도 대응 가능</li>
-   385	                            <li>초과 요금: 커스텀 요금 체계</li>
-   386	                            <li>※ 볼륨 디스카운트 있음</li>
-   387	                        </ul>
-   388	
-   389	                        <h4><i class="fas fa-check-circle"></i> 체제</h4>
-   390	                        <ul>
-   391	                            <li><strong>전담 팀 (3명 이상)</strong></li>
-   392	                            <li>· 팀 리더 1명</li>
-   393	                            <li>· 담당자 2명 이상</li>
-   394	                        </ul>
-   395	
-   396	                        <h4><i class="fas fa-check-circle"></i> 리포트</h4>
-   397	                        <ul>
-   398	                            <li><strong>커스텀 빈도의 리포트</strong></li>
-   399	                            <li>· 일간·주간·월간에서 선택</li>
-   400	                            <li>· Premium Plus 내용 모두</li>
-   401	                            <li><strong>정례 미팅</strong></li>
-   402	                            <li>· 월 2회 이상 (빈도 커스텀)</li>
-   403	                            <li>· 대면·온라인 선택 가능</li>
-   404	                            <li>· 임원·경영층 참여 전제</li>
-   405	                        </ul>
-   406	
-   407	                        <h4><i class="fas fa-check-circle"></i> FAQ</h4>
-   408	                        <ul>
-   409	                            <li><strong>무제한</strong></li>
-   410	                            <li>동영상·인터랙티브 콘텐츠 대응</li>
-   411	                            <li>AI 챗봇 완전 커스터마이징</li>
-   412	                            <li>FAQ 분석</li>
-   413	                            <li>※ FAQ 분석을 활용해 AI 챗봇 기능 향상에 주력</li>
-   414	                            <li>※ 챗봇 무료 자동 해결 수 초과 시 추가 요금 발생</li>
-   415	                        </ul>
-   416	
-   417	                        <h4><i class="fas fa-check-circle"></i> 대응 시간</h4>
-   418	                        <ul>
-   419	                            <li>평일 9:00-21:00 (12시간)</li>
-   420	                            <li>토요일 9:00-21:00 (12시간)</li>
-   421	                        </ul>
-   422	
-   423	                        <h4><i class="fas fa-check-circle"></i> 시스템</h4>
-   424	                        <ul>
-   425	                            <li>· Premium Plus 내용 모두</li>
-   426	                            <li>· 그때그때 희망 기능 도입 검토</li>
-   427	                            <li>· 사내 노하우 제작</li>
-   428	                        </ul>
-   429	
-   430	                        <h4><i class="fas fa-check-circle"></i> 전문 지원</h4>
-   431	                        <ul>
-   432	                            <li>· Premium Plus 내용 모두</li>
-   433	                        </ul>
-   434	
-   435	                        <h4><i class="fas fa-check-circle"></i> 추가 서비스</h4>
-   436	                        <ul>
-   437	                            <li><strong>복수 브랜드 통합 관리</strong></li>
-   438	                            <li>· 5개 브랜드까지 추가 요금 없음 (동종 브랜드에 한함)</li>
-   439	                            <li>· 브랜드별 리포트</li>
-   440	                            <li>· 크로스 브랜드 분석</li>
-   441	                        </ul>
-   442	                    </div>
-   443	
-   444	                    <a href="contact.html" class="btn btn-primary btn-large">무료 상담 예약</a>
-   445	                </div>
-   446	            </div>
-   447	            <div class="plan-cta" style="margin-top: 30px;">
-   448	            </div>
-   449	        </div>
-   450	    </section>
-   451	
-   452	    <section class="pricing-options">
-   453	        <div class="container">
-   454	            <h2 class="section-title">옵션 서비스</h2>
-   455	            <div class="options-grid">
-   456	                <div class="option-card">
-   457	                    <i class="fas fa-book"></i>
-   458	                    <h3>FAQ 추가 작성</h3>
-   459	                    <p class="option-price">30만원 <span>/ 10건</span></p>
-   460	                    <p>플랜 상한을 초과하여 FAQ를 추가하고 싶을 경우 이용 가능합니다.</p>
-   461	                </div>
-   462	                <div class="option-card">
-   463	                    <i class="fas fa-calendar-alt"></i>
-   464	                    <h3>주말 대응 (일요일)</h3>
-   465	                    <p class="option-price">50만원 <span>/ 월</span></p>
-   466	                    <p>일요일 문의 대응 추가. 대응 시간은 9:00-18:00입니다.</p>
-   467	                </div>
-   468	                <div class="option-card">
-   469	                    <i class="fas fa-moon"></i>
-   470	                    <h3>야간 대응 (21:00-23:00)</h3>
-   471	                    <p class="option-price">80만원 <span>/ 월</span></p>
-   472	                    <p>평일 야간 대응 추가. 일본 고객의 퇴근 후 문의에도 대응할 수 있습니다.</p>
-   473	                </div>
-   474	                <div class="option-card">
-   475	                    <i class="fas fa-language"></i>
-   476	                    <h3>번역 서비스</h3>
-   477	                    <p class="option-price">100원~ <span>/ 1글자</span></p>
-   478	                    <p>상품 설명, 매뉴얼, 마케팅 자료 등의 일한 번역을 제공합니다.</p>
-   479	                </div>
-   480	                <div class="option-card">
-   481	                    <i class="fas fa-robot"></i>
-   482	                    <h3>챗봇 기능 도입</h3>
-   483	                    <p class="option-price">별도 상담</p>
-   484	                    <p>AI 챗봇으로 24시간 자동 응답. 상세한 사항은 별도로 문의해 주세요.</p>
-   485	                </div>
-   486	            </div>
-   487	        </div>
-   488	    </section>
-   489	
-   490	    <section class="pricing-discounts">
-   491	        <div class="container">
-   492	            <h2 class="section-title">特別割引</h2>
-   493	            <div class="discounts-grid">
-   494	                <div class="discount-card">
-   495	                    <i class="fas fa-tag"></i>
-   496	                    <h3>첫 계약 특전</h3>
-   497	                    <p>Business 이상 플랜 계약 시<br><strong>첫 달 50% OFF</strong></p>
-   498	                </div>
-   499	                <div class="discount-card">
-   500	                    <i class="fas fa-layer-group"></i>
-   501	                    <h3>복수 브랜드 할인</h3>
-   502	                    <p>2번째 브랜드부터 각 10% OFF<br>※복수 브랜드 관리에 최적</p>
-   503	                </div>
-   504	                <div class="discount-card">
-   505	                    <i class="fas fa-calendar-check"></i>
-   506	                    <h3>연간 계약 할인</h3>
-   507	                    <p>12개월 일괄 결제 시 월액 5% OFF<br>초기 비용 30% OFF<br>※전체 플랜 대상</p>
-   508	                </div>
-   509	            </div>
-   510	        </div>
-   511	    </section>
-   512	
-   513	    <section class="pricing-comparison">
-   514	        <div class="container">
-   515	            <h2 class="section-title">플랜 비교표</h2>
-   516	            <div class="comparison-table-wrapper">
-   517	                <table class="comparison-table">
-   518	                    <thead>
-   519	                        <tr>
-   520	                            <th>항목</th>
-   521	                            <th>Starter</th>
-   522	                            <th class="featured-col">Business</th>
-   523	                            <th>Premium</th>
-   524	                            <th>Premium Plus</th>
-   525	                            <th>Enterprise</th>
-   526	                        </tr>
-   527	                    </thead>
-   528	                    <tbody>
-   529	                        <tr>
-   530	                            <td>월액 요금</td>
-   531	                            <td>80만원</td>
-   532	                            <td class="featured-col">180만원</td>
-   533	                            <td>450만원</td>
-   534	                            <td>750만원</td>
-   535	                            <td>1,200만원~</td>
-   536	                        </tr>
-   537	                        <tr>
-   538	                            <td>초기 비용</td>
-   539	                            <td>50만원</td>
-   540	                            <td class="featured-col">100만원</td>
-   541	                            <td>200만원</td>
-   542	                            <td>250만원</td>
-   543	                            <td>별도 상담</td>
-   544	                        </tr>
-   545	                        <tr>
-   546	                            <td>대응 건수 (월)</td>
-   547	                            <td>80건<br>(초과 3,500원)</td>
-   548	                            <td class="featured-col">200건<br>(초과 3,500원)</td>
-   549	                            <td>600건<br>(초과 3,000원)</td>
-   550	                            <td>1,200건<br>(초과 2,500원)</td>
-   551	                            <td>1,500건~<br>(커스텀)</td>
-   552	                        </tr>
-   553	                        <tr>
-   554	                            <td>체제</td>
-   555	                            <td>공유 담당자<br>(3-5개 기업)</td>
-   556	                            <td class="featured-col">준전담 담당자<br>(2-3개 기업)</td>
-   557	                            <td>전담 담당자<br>1명</td>
-   558	                            <td>전담 담당자<br>1-2명</td>
-   559	                            <td>전담 팀<br>(3명+)</td>
-   560	                        </tr>
-   561	                        <tr>
-   562	                            <td>FAQ관리</td>
-   563	                            <td>10건</td>
-   564	                            <td class="featured-col">30건</td>
-   565	                            <td>50건<br>(무제한 업데이트)</td>
-   566	                            <td>100건<br>(무제한 업데이트)</td>
-   567	                            <td>무제한</td>
-   568	                        </tr>
-   569	                        <tr>
-   570	                            <td>대응 시간</td>
-   571	                            <td>—</td>
-   572	                            <td class="featured-col">평일9-19시<br>(10시간)</td>
-   573	                            <td>평일9-21시<br>토8시간</td>
-   574	                            <td>평일9-21시<br>토8시간<br>일요긴급</td>
-   575	                            <td>평일9-21시<br>토9-21시</td>
-   576	                        </tr>
-   577	                        <tr>
-   578	                            <td>주간 리포트</td>
-   579	                            <td><i class="fas fa-check"></i></td>
-   580	                            <td class="featured-col"><i class="fas fa-check"></i></td>
-   581	                            <td><i class="fas fa-check"></i></td>
-   582	                            <td><i class="fas fa-check"></i></td>
-   583	                            <td><i class="fas fa-check"></i></td>
-   584	                        </tr>
-   585	                        <tr>
-   586	                            <td>월간 미팅</td>
-   587	                            <td>—</td>
-   588	                            <td class="featured-col">1시간</td>
-   589	                            <td>포함</td>
-   590	                            <td>포함</td>
-   591	                            <td>맞춤</td>
-   592	                        </tr>
-   593	                        <tr>
-   594	                            <td>상급자 대응</td>
-   595	                            <td>—</td>
-   596	                            <td class="featured-col">—</td>
-   597	                            <td><i class="fas fa-check"></i></td>
-   598	                            <td><i class="fas fa-check"></i></td>
-   599	                            <td><i class="fas fa-check"></i></td>
-   600	                        </tr>
-   601	                        <tr>
-   602	                            <td>약사법 대응</td>
-   603	                            <td>—</td>
-   604	                            <td class="featured-col">—</td>
-   605	                            <td><i class="fas fa-check"></i></td>
-   606	                            <td><i class="fas fa-check"></i></td>
-   607	                            <td><i class="fas fa-check"></i></td>
-   608	                        </tr>
-   609	                        <tr>
-   610	                            <td>Slack연동</td>
-   611	                            <td><i class="fas fa-check"></i></td>
-   612	                            <td class="featured-col"><i class="fas fa-check"></i></td>
-   613	                            <td><i class="fas fa-check"></i></td>
-   614	                            <td><i class="fas fa-check"></i></td>
-   615	                            <td><i class="fas fa-check"></i></td>
-   616	                        </tr>
-   617	                        <tr>
-   618	                            <td>AI자동 응답</td>
-   619	                            <td>—</td>
-   620	                            <td class="featured-col">—</td>
-   621	                            <td><i class="fas fa-check"></i></td>
-   622	                            <td><i class="fas fa-check"></i></td>
-   623	                            <td><i class="fas fa-check"></i></td>
-   624	                        </tr>
-   625	                    </tbody>
-   626	                </table>
-   627	            </div>
-   628	        </div>
-   629	    </section>
-   630	
-   631	    <section class="cta-section">
-   632	        <div class="container">
-   633	            <div class="cta-content">
-   634	                <h2>어떤 플랜이 최적인지 고민되시는 분은<br>부담 없이 상담해 주세요</h2>
-   635	                <p>귀사의 상황에 맞춰 최적의 플랜을 제안합니다.</p>
-   636	                <div class="cta-buttons">
-   637	                    <a href="contact.html" class="btn btn-primary btn-large">
-   638	                        <i class="fas fa-calendar-check"></i> 무료 상담 예약
-   639	                    </a>
-   640	                </div>
-   641	            </div>
-   642	        </div>
-   643	    </section>
-   644	
-   645	    <footer class="footer">
-   646	        <div class="container">
-   647	            <div class="footer-content">
-   648	                <div class="footer-col">
-   649	                    <div class="footer-logo">
-   650	                        <i class="fas fa-comments"></i>
-   651	                        <span>Kotae CS</span>
-   652	                    </div>
-   653	                    <p>모든 질문에, 답을 드립니다.</p>
-   654	                    <p class="footer-tagline">Every question, answered.</p>
-   655	                </div>
-   656	                <div class="footer-col">
-   657	                    <h4>서비스</h4>
-   658	                    <ul>
-   659	                        <li><a href="service.html">서비스 내용</a></li>
-   660	                        <li><a href="pricing.html">요금 플랜</a></li>
-   661	                        <li><a href="about.html">회사 소개</a></li>
-   662	                    </ul>
-   663	                </div>
-   664	                <div class="footer-col">
-   665	                    <h4>문의</h4>
-   666	                    <ul>
-   667	                        <li><a href="contact.html">무료 상담 예약</a></li>
-   668	                        <li><a href="contact.html">문의 폼</a></li>
-   669	                    </ul>
-   670	                </div>
-   671	                <div class="footer-col">
-   672	                    <h4>소재지</h4>
-   673	                    <p>대한민국 경기도 성남시<br>(大韓民国 京畿道 城南市)</p>
-   674	                    <p style="font-size: 0.9em; margin-top: 10px;">※리모트워크 전문</p>
-   675	                </div>
-   676	            </div>
-   677	            <div class="footer-bottom">
-   678	                <p>&copy; 2026 Kotae CS. All rights reserved.</p>
-   679	            </div>
-   680	        </div>
-   681	    </footer>
-   682	
-   683	    <script src="js/main.js"></script>
-   684	</body>
-   685	</html>
-   686	
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요금 플랜 - Kotae CS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <i class="fas fa-comments"></i>
+                    <span>Kotae CS</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="service.html">서비스 내용</a></li>
+                    <li><a href="pricing.html" class="active">요금 플랜</a></li>
+                    <li><a href="about.html">회사 소개</a></li>
+                    <li><a href="contact.html" class="cta-button">무료 상담 예약</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>요금 플랜</h1>
+            <p>귀사의 규모와 성장 단계에 맞춰 선택할 수 있는 5가지 플랜</p>
+        </div>
+    </section>
+
+    <section class="pricing-campaign">
+        <div class="container">
+            <div class="campaign-box">
+                <i class="fas fa-gift"></i>
+                <h3>첫 계약 특전</h3>
+                <p>Business 이상 플랜 계약 시 첫 달 50% OFF</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-plans">
+        <div class="container">
+            <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <!-- Starterプラン -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p class="pricing-target">스타트업 대상</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="amount">80만원</span>
+                        <span class="period">/월</span>
+                    </div>
+                    <p class="pricing-initial">초기 비용: 50만원</p>
+                    
+                    <div class="pricing-features">
+                        <h4><i class="fas fa-check-circle"></i> 대응 건수</h4>
+                        <ul>
+                            <li>월 80건까지 (이메일·채팅 합산)</li>
+                            <li>초과분: 1건당 3,500원</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 체제</h4>
+                        <ul>
+                            <li>공유 담당자 (3-5개 기업 담당)</li>
+                            <li>대응 품질 보증</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 리포트</h4>
+                        <ul>
+                            <li>주간 리포트 (한국어·기본 항목)</li>
+                            <li>· 대응 건수</li>
+                            <li>· 평균 대응 시간</li>
+                            <li>· VOC 공유</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> FAQ</h4>
+                        <ul>
+                            <li>10건까지 작성·관리</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 시스템</h4>
+                        <ul>
+                            <li>Zendesk 기본 셋업</li>
+                            <li>· 티켓 관리</li>
+                            <li>· 이메일 통합</li>
+                            <li>· 기본 리포트 기능</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 전문 지원</h4>
+                        <ul>
+                            <li>기본 가이드만 제공</li>
+                            <li>에스컬레이션: 불가</li>
+                        </ul>
+
+                        <h4><i class="fas fa-times-circle" style="color: #999;"></i> 대응 불가</h4>
+                        <ul style="color: #999;">
+                            <li>클레임 대응·환불 협상</li>
+                            <li>법적 문제 (알레르기 등)</li>
+                            <li>약사법 관련 판단</li>
+                            <li>미디어·SNS 대응</li>
+                            <li>고액 환불 (5만원 이상)</li>
+                        </ul>
+                    </div>
+
+                    <a href="contact.html" class="btn btn-outline btn-large">무료 상담 예약</a>
+                </div>
+
+                <!-- Businessプラン（人気） -->
+                <div class="pricing-card featured">
+                    <div class="badge-popular">인기 No.1</div>
+                    <div class="pricing-header">
+                        <h3>Business</h3>
+                        <p class="pricing-target">성장 중인 기업 대상</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="amount">180만원</span>
+                        <span class="period">/월</span>
+                    </div>
+                    <p class="pricing-initial">초기 비용: 100만원</p>
+                    
+                    <div class="pricing-features">
+                        <h4><i class="fas fa-check-circle"></i> 대응 건수</h4>
+                        <ul>
+                            <li>월 200건까지 (이메일·SNS 합산)</li>
+                            <li><strong>내역 예시:</strong></li>
+                            <li>· 이메일: 최대 150건</li>
+                            <li>· SNS (Instagram/LINE 등): 최대 50건</li>
+                            <li>※ 유연하게 배분 가능</li>
+                            <li>초과분: 1건당 3,500원</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 체제</h4>
+                        <ul>
+                            <li>준전담 담당자 (2-3개 기업 담당)</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 리포트</h4>
+                        <ul>
+                            <li>주간 리포트 (상세판·한국어)</li>
+                            <li>· 대응 건수 (채널별)</li>
+                            <li>· 대응 시간 (평균)</li>
+                            <li>· VOC 공유</li>
+                            <li>· 고객 만족도</li>
+                            <li>· 자주 묻는 질문 TOP5</li>
+                            <li>· 개선 제안</li>
+                            <li><strong>월간 개선 미팅 (1시간·온라인)</strong></li>
+                            <li>· 전월 리뷰</li>
+                            <li>· KPI 확인</li>
+                            <li>· 개선 제안 논의</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> FAQ</h4>
+                        <ul>
+                            <li>30건까지 작성·관리</li>
+                            <li>카테고리 분류 대응</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 대응 시간</h4>
+                        <ul>
+                            <li>평일 9:00-19:00 (10시간)</li>
+                            <li>토·일·공휴일: 휴무</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 시스템</h4>
+                        <ul>
+                            <li>Zendesk 기본 셋업</li>
+                            <li>· 티켓 관리</li>
+                            <li>· 이메일 통합</li>
+                            <li>· 기본 리포트 기능</li>
+                            <li>· 고객 만족도 조사 자동 발송</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 전문 지원</h4>
+                        <ul>
+                            <li>기본적인 에스컬레이션 대응</li>
+                            <li>약사법 대응: 불가</li>
+                            <li>상급자 대응: 월 5건까지 무료 (이메일 대응)</li>
+                        </ul>
+                    </div>
+
+                    <a href="contact.html" class="btn btn-primary btn-large">무료 상담 예약</a>
+                </div>
+
+                <!-- Premiumプラン -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <p class="pricing-target">본격 전개 기업 대상</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="amount">450만원</span>
+                        <span class="period">/월</span>
+                    </div>
+                    <p class="pricing-initial">초기 비용: 200만원</p>
+                    
+                    <div class="pricing-features">
+                        <h4><i class="fas fa-check-circle"></i> 대응 건수</h4>
+                        <ul>
+                            <li><strong>월 600건까지 (전체 채널 합산)</strong></li>
+                            <li><strong>내역 예시:</strong></li>
+                            <li>· 이메일: 최대 400건</li>
+                            <li>· 채팅: 최대 150건</li>
+                            <li>· SNS: 최대 100건</li>
+                            <li>※ 유연하게 배분 가능</li>
+                            <li>초과분: 1건당 3,000원</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 체제</h4>
+                        <ul>
+                            <li><strong>전담 담당자 1명 배치</strong></li>
+                            <li>· 귀사 전용 담당자</li>
+                            <li>· 노하우 축적 가능</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 리포트</h4>
+                        <ul>
+                            <li>주간 리포트 (상세 분석·한국어)</li>
+                            <li>· 모든 Business 항목</li>
+                            <li>· 트렌드 분석</li>
+                            <li>· 고객 세그먼트별 분석</li>
+                            <li><strong>월간 상세 분석 리포트</strong></li>
+                            <li>· KPI 달성 현황</li>
+                            <li>· 개선 시책의 효과 측정</li>
+                            <li>· 다음 달 전략 제안</li>
+                            <li><strong>월간 전략 미팅</strong></li>
+                            <li>· 전월 리뷰</li>
+                            <li>· KPI 확인</li>
+                            <li>· 개선 제안 논의</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> FAQ</h4>
+                        <ul>
+                            <li>50건까지 작성·관리</li>
+                            <li>업데이트: 무제한·무료</li>
+                            <li>카테고리 분류</li>
+                            <li>FAQ 분석·리포트 발송 (월 1회)</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 대응 시간</h4>
+                        <ul>
+                            <li>평일 9:00-21:00 (12시간)</li>
+                            <li>토요일 10:00-18:00 (8시간)</li>
+                            <li>일·공휴일: 휴무</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 시스템</h4>
+                        <ul>
+                            <li>Zendesk + 고급 자동화</li>
+                            <li>· AI 자동 응답 (기본)</li>
+                            <li>· 트리거 무제한</li>
+                            <li>· 커스텀 대시보드</li>
+                            <li>· 고객 만족도 조사 자동 발송</li>
+                            <li>· SLA 관리</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 전문 지원</h4>
+                        <ul>
+                            <li><strong>상급자 대응 (무제한)</strong></li>
+                            <li>· 클레임 대응</li>
+                            <li>· 환불 협상</li>
+                            <li>· 경우에 따라 전화 대응 가능</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 추가 서비스</h4>
+                        <ul>
+                            <li>VOC 분석</li>
+                            <li>· 월간 리포트로 고객의 목소리 시각화</li>
+                            <li>· 마케팅 인사이트 제공</li>
+                        </ul>
+                    </div>
+
+                    <a href="contact.html" class="btn btn-outline btn-large">무료 상담 예약</a>
+                </div>
+
+                <!-- Premium Plusプラン -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Premium Plus</h3>
+                        <p class="pricing-target">대규모 전개 기업 대상</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="amount">750만원</span>
+                        <span class="period">/월</span>
+                    </div>
+                    <p class="pricing-initial">초기 비용: 250만원</p>
+                    
+                    <div class="pricing-features">
+                        <h4><i class="fas fa-check-circle"></i> 대응 건수</h4>
+                        <ul>
+                            <li><strong>월 1,200건까지 (전체 채널 합산)</strong></li>
+                            <li>※ 완전히 유연한 배분</li>
+                            <li>초과분: 1건당 2,500원</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 체제</h4>
+                        <ul>
+                            <li><strong>전담 담당자 1-2명 배치</strong></li>
+                            <li>· 메인 담당자 1명</li>
+                            <li>· 서브 담당자 1명 (휴가·성수기 대응)</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 리포트</h4>
+                        <ul>
+                            <li><strong>일간 리포트 (리얼타임)</strong></li>
+                            <li>· 당일 대응 건수</li>
+                            <li>· 미대응 티켓</li>
+                            <li>· 긴급 안건</li>
+                            <li><strong>주간 리포트 (상세 분석)</strong></li>
+                            <li>· Premium 내용 모두</li>
+                            <li><strong>월간 전략 리포트</strong></li>
+                            <li>· Premium 내용 모두</li>
+                            <li><strong>월간 전략 미팅</strong></li>
+                            <li>· Premium 내용 모두</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> FAQ</h4>
+                        <ul>
+                            <li>100건까지 작성·관리</li>
+                            <li>업데이트: 무제한·무료</li>
+                            <li>동영상 FAQ 제작 지원 (월 2개까지)</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 대응 시간</h4>
+                        <ul>
+                            <li>평일 9:00-21:00 (12시간)</li>
+                            <li>토요일 10:00-18:00 (8시간)</li>
+                            <li>일·공휴일: 긴급 대응만 (추가 요금 없음)</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 시스템</h4>
+                        <ul>
+                            <li>Zendesk + AI 통합 + 커스텀 대시보드</li>
+                            <li>· AI 자동 응답 (고급) ← Premium보다 고급</li>
+                            <li>· 챗봇 설정 지원</li>
+                            <li>· 예측 분석 (문의 증가 예측)</li>
+                            <li>· 커스텀 리포트 제작 (월 3개까지)</li>
+                            <li>· Premium 내용 모두</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 전문 지원</h4>
+                        <ul>
+                            <li>· Premium 내용 모두</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 추가 서비스</h4>
+                        <ul>
+                            <li>· Premium 내용 모두</li>
+                        </ul>
+                    </div>
+
+                    <a href="contact.html" class="btn btn-outline btn-large">무료 상담 예약</a>
+                </div>
+
+                <!-- Enterpriseプラン -->
+                <div class="pricing-card" style="border: 3px solid var(--primary-color);">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p class="pricing-target">완전 커스터마이징</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="amount" style="font-size: 1.8rem;">1,200만원~</span>
+                    </div>
+                    <p class="pricing-initial">초기 비용: 별도 상담</p>
+                    
+                    <div class="pricing-features">
+                        <h4><i class="fas fa-check-circle"></i> 대응 건수</h4>
+                        <ul>
+                            <li><strong>월 1,500건 이상 (완전 무제한도 상담 가능)</strong></li>
+                            <li>모든 채널 대응:</li>
+                            <li>· 이메일·채팅·SNS</li>
+                            <li>· 라이브 챗도 대응 가능</li>
+                            <li>초과 요금: 커스텀 요금 체계</li>
+                            <li>※ 볼륨 디스카운트 있음</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 체제</h4>
+                        <ul>
+                            <li><strong>전담 팀 (3명 이상)</strong></li>
+                            <li>· 팀 리더 1명</li>
+                            <li>· 담당자 2명 이상</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 리포트</h4>
+                        <ul>
+                            <li><strong>커스텀 빈도의 리포트</strong></li>
+                            <li>· 일간·주간·월간에서 선택</li>
+                            <li>· Premium Plus 내용 모두</li>
+                            <li><strong>정례 미팅</strong></li>
+                            <li>· 월 2회 이상 (빈도 커스텀)</li>
+                            <li>· 대면·온라인 선택 가능</li>
+                            <li>· 임원·경영층 참여 전제</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> FAQ</h4>
+                        <ul>
+                            <li><strong>무제한</strong></li>
+                            <li>동영상·인터랙티브 콘텐츠 대응</li>
+                            <li>AI 챗봇 완전 커스터마이징</li>
+                            <li>FAQ 분석</li>
+                            <li>※ FAQ 분석을 활용해 AI 챗봇 기능 향상에 주력</li>
+                            <li>※ 챗봇 무료 자동 해결 수 초과 시 추가 요금 발생</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 대응 시간</h4>
+                        <ul>
+                            <li>평일 9:00-21:00 (12시간)</li>
+                            <li>토요일 9:00-21:00 (12시간)</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 시스템</h4>
+                        <ul>
+                            <li>· Premium Plus 내용 모두</li>
+                            <li>· 그때그때 희망 기능 도입 검토</li>
+                            <li>· 사내 노하우 제작</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 전문 지원</h4>
+                        <ul>
+                            <li>· Premium Plus 내용 모두</li>
+                        </ul>
+
+                        <h4><i class="fas fa-check-circle"></i> 추가 서비스</h4>
+                        <ul>
+                            <li><strong>복수 브랜드 통합 관리</strong></li>
+                            <li>· 5개 브랜드까지 추가 요금 없음 (동종 브랜드에 한함)</li>
+                            <li>· 브랜드별 리포트</li>
+                            <li>· 크로스 브랜드 분석</li>
+                        </ul>
+                    </div>
+
+                    <a href="contact.html" class="btn btn-primary btn-large">무료 상담 예약</a>
+                </div>
+            </div>
+            <div class="plan-cta" style="margin-top: 30px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-options">
+        <div class="container">
+            <h2 class="section-title">옵션 서비스</h2>
+            <div class="options-grid">
+                <div class="option-card">
+                    <i class="fas fa-book"></i>
+                    <h3>FAQ 추가 작성</h3>
+                    <p class="option-price">30만원 <span>/ 10건</span></p>
+                    <p>플랜 상한을 초과하여 FAQ를 추가하고 싶을 경우 이용 가능합니다.</p>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>주말 대응 (일요일)</h3>
+                    <p class="option-price">50만원 <span>/ 월</span></p>
+                    <p>일요일 문의 대응 추가. 대응 시간은 9:00-18:00입니다.</p>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-moon"></i>
+                    <h3>야간 대응 (21:00-23:00)</h3>
+                    <p class="option-price">80만원 <span>/ 월</span></p>
+                    <p>평일 야간 대응 추가. 일본 고객의 퇴근 후 문의에도 대응할 수 있습니다.</p>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-language"></i>
+                    <h3>번역 서비스</h3>
+                    <p class="option-price">100원~ <span>/ 1글자</span></p>
+                    <p>상품 설명, 매뉴얼, 마케팅 자료 등의 일한 번역을 제공합니다.</p>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>챗봇 기능 도입</h3>
+                    <p class="option-price">별도 상담</p>
+                    <p>AI 챗봇으로 24시간 자동 응답. 상세한 사항은 별도로 문의해 주세요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-discounts">
+        <div class="container">
+            <h2 class="section-title">特別割引</h2>
+            <div class="discounts-grid">
+                <div class="discount-card">
+                    <i class="fas fa-tag"></i>
+                    <h3>첫 계약 특전</h3>
+                    <p>Business 이상 플랜 계약 시<br><strong>첫 달 50% OFF</strong></p>
+                </div>
+                <div class="discount-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>복수 브랜드 할인</h3>
+                    <p>2번째 브랜드부터 각 10% OFF<br>※복수 브랜드 관리에 최적</p>
+                </div>
+                <div class="discount-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>연간 계약 할인</h3>
+                    <p>12개월 일괄 결제 시 월액 5% OFF<br>초기 비용 30% OFF<br>※전체 플랜 대상</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-comparison">
+        <div class="container">
+            <h2 class="section-title">플랜 비교표</h2>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>항목</th>
+                            <th>Starter</th>
+                            <th class="featured-col">Business</th>
+                            <th>Premium</th>
+                            <th>Premium Plus</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>월액 요금</td>
+                            <td>80만원</td>
+                            <td class="featured-col">180만원</td>
+                            <td>450만원</td>
+                            <td>750만원</td>
+                            <td>1,200만원~</td>
+                        </tr>
+                        <tr>
+                            <td>초기 비용</td>
+                            <td>50만원</td>
+                            <td class="featured-col">100만원</td>
+                            <td>200만원</td>
+                            <td>250만원</td>
+                            <td>별도 상담</td>
+                        </tr>
+                        <tr>
+                            <td>대응 건수 (월)</td>
+                            <td>80건<br>(초과 3,500원)</td>
+                            <td class="featured-col">200건<br>(초과 3,500원)</td>
+                            <td>600건<br>(초과 3,000원)</td>
+                            <td>1,200건<br>(초과 2,500원)</td>
+                            <td>1,500건~<br>(커스텀)</td>
+                        </tr>
+                        <tr>
+                            <td>체제</td>
+                            <td>공유 담당자<br>(3-5개 기업)</td>
+                            <td class="featured-col">준전담 담당자<br>(2-3개 기업)</td>
+                            <td>전담 담당자<br>1명</td>
+                            <td>전담 담당자<br>1-2명</td>
+                            <td>전담 팀<br>(3명+)</td>
+                        </tr>
+                        <tr>
+                            <td>FAQ관리</td>
+                            <td>10건</td>
+                            <td class="featured-col">30건</td>
+                            <td>50건<br>(무제한 업데이트)</td>
+                            <td>100건<br>(무제한 업데이트)</td>
+                            <td>무제한</td>
+                        </tr>
+                        <tr>
+                            <td>대응 시간</td>
+                            <td>—</td>
+                            <td class="featured-col">평일9-19시<br>(10시간)</td>
+                            <td>평일9-21시<br>토8시간</td>
+                            <td>평일9-21시<br>토8시간<br>일요긴급</td>
+                            <td>평일9-21시<br>토9-21시</td>
+                        </tr>
+                        <tr>
+                            <td>주간 리포트</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td class="featured-col"><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>월간 미팅</td>
+                            <td>—</td>
+                            <td class="featured-col">1시간</td>
+                            <td>포함</td>
+                            <td>포함</td>
+                            <td>맞춤</td>
+                        </tr>
+                        <tr>
+                            <td>상급자 대응</td>
+                            <td>—</td>
+                            <td class="featured-col">—</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>약사법 대응</td>
+                            <td>—</td>
+                            <td class="featured-col">—</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Slack연동</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td class="featured-col"><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>AI자동 응답</td>
+                            <td>—</td>
+                            <td class="featured-col">—</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>어떤 플랜이 최적인지 고민되시는 분은<br>부담 없이 상담해 주세요</h2>
+                <p>귀사의 상황에 맞춰 최적의 플랜을 제안합니다.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i> 무료 상담 예약
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-comments"></i>
+                        <span>Kotae CS</span>
+                    </div>
+                    <p>모든 질문에, 답을 드립니다.</p>
+                    <p class="footer-tagline">Every question, answered.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>서비스</h4>
+                    <ul>
+                        <li><a href="service.html">서비스 내용</a></li>
+                        <li><a href="pricing.html">요금 플랜</a></li>
+                        <li><a href="about.html">회사 소개</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>문의</h4>
+                    <ul>
+                        <li><a href="contact.html">무료 상담 예약</a></li>
+                        <li><a href="contact.html">문의 폼</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>소재지</h4>
+                    <p>대한민국 경기도 성남시<br>(大韓民国 京畿道 城南市)</p>
+                    <p style="font-size: 0.9em; margin-top: 10px;">※리모트워크 전문</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kotae CS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
