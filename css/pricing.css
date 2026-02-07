@@ -1,592 +1,592 @@
 /* 料金ページ追加スタイル */
-     2	.page-hero {
-     3	    background: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
-     4	    color: var(--white);
-     5	    padding: 80px 0;
-     6	    text-align: center;
-     7	}
-     8	
-     9	.page-hero h1 {
-    10	    font-size: 3rem;
-    11	    margin-bottom: 15px;
-    12	}
-    13	
-    14	.page-hero p {
-    15	    font-size: 1.2rem;
-    16	    opacity: 0.9;
-    17	}
-    18	
-    19	/* サービス概要 */
-    20	.service-overview {
-    21	    padding: 80px 0;
-    22	    background: var(--bg-light);
-    23	}
-    24	
-    25	.overview-grid {
-    26	    display: grid;
-    27	    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    28	    gap: 30px;
-    29	}
-    30	
-    31	.overview-card {
-    32	    background: var(--white);
-    33	    padding: 30px;
-    34	    border-radius: 12px;
-    35	    box-shadow: var(--shadow);
-    36	    transition: transform 0.3s;
-    37	}
-    38	
-    39	.overview-card:hover {
-    40	    transform: translateY(-5px);
-    41	}
-    42	
-    43	.overview-icon {
-    44	    width: 60px;
-    45	    height: 60px;
-    46	    border-radius: 12px;
-    47	    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    48	    display: flex;
-    49	    align-items: center;
-    50	    justify-content: center;
-    51	    margin-bottom: 20px;
-    52	}
-    53	
-    54	.overview-icon i {
-    55	    font-size: 1.8rem;
-    56	    color: var(--white);
-    57	}
-    58	
-    59	.overview-card h3 {
-    60	    font-size: 1.3rem;
-    61	    margin-bottom: 10px;
-    62	}
-    63	
-    64	/* サービス詳細 */
-    65	.service-detail {
-    66	    padding: 80px 0;
-    67	}
-    68	
-    69	.detail-grid {
-    70	    display: grid;
-    71	    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    72	    gap: 40px;
-    73	}
-    74	
-    75	.detail-item {
-    76	    border: 2px solid var(--border-color);
-    77	    border-radius: 12px;
-    78	    padding: 30px;
-    79	}
-    80	
-    81	.detail-icon {
-    82	    width: 60px;
-    83	    height: 60px;
-    84	    border-radius: 50%;
-    85	    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    86	    display: flex;
-    87	    align-items: center;
-    88	    justify-content: center;
-    89	    margin-bottom: 20px;
-    90	}
-    91	
-    92	.detail-icon i {
-    93	    font-size: 1.8rem;
-    94	    color: var(--white);
-    95	}
-    96	
-    97	.detail-item h3 {
-    98	    margin-bottom: 15px;
-    99	}
-   100	
-   101	.detail-item ul {
-   102	    list-style: none;
-   103	    padding-left: 0;
-   104	}
-   105	
-   106	.detail-item ul li {
-   107	    padding: 8px 0;
-   108	    padding-left: 25px;
-   109	    position: relative;
-   110	}
-   111	
-   112	.detail-item ul li:before {
-   113	    content: "✓";
-   114	    position: absolute;
-   115	    left: 0;
-   116	    color: var(--primary-color);
-   117	    font-weight: 700;
-   118	}
-   119	
-   120	/* フロー */
-   121	.service-flow {
-   122	    padding: 80px 0;
-   123	    background: var(--bg-light);
-   124	}
-   125	
-   126	.flow-container {
-   127	    display: flex;
-   128	    align-items: center;
-   129	    justify-content: center;
-   130	    gap: 20px;
-   131	    flex-wrap: wrap;
-   132	}
-   133	
-   134	.flow-step {
-   135	    background: var(--white);
-   136	    padding: 30px;
-   137	    border-radius: 12px;
-   138	    box-shadow: var(--shadow);
-   139	    flex: 1;
-   140	    min-width: 200px;
-   141	    max-width: 250px;
-   142	}
-   143	
-   144	.step-number {
-   145	    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-   146	    color: var(--white);
-   147	    padding: 5px 15px;
-   148	    border-radius: 20px;
-   149	    display: inline-block;
-   150	    font-weight: 600;
-   151	    margin-bottom: 15px;
-   152	}
-   153	
-   154	.flow-step h3 {
-   155	    margin-bottom: 10px;
-   156	}
-   157	
-   158	.flow-arrow {
-   159	    font-size: 2rem;
-   160	    color: var(--primary-color);
-   161	}
-   162	
-   163	/* テクノロジー */
-   164	.service-technology {
-   165	    padding: 80px 0;
-   166	}
-   167	
-   168	.tech-grid {
-   169	    display: grid;
-   170	    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   171	    gap: 30px;
-   172	}
-   173	
-   174	.tech-card {
-   175	    background: var(--white);
-   176	    border: 2px solid var(--border-color);
-   177	    border-radius: 12px;
-   178	    padding: 30px;
-   179	    text-align: center;
-   180	    transition: all 0.3s;
-   181	}
-   182	
-   183	.tech-card:hover {
-   184	    border-color: var(--primary-color);
-   185	    box-shadow: var(--shadow-lg);
-   186	}
-   187	
-   188	.tech-card h3 {
-   189	    margin: 15px 0 10px;
-   190	}
-   191	
-   192	/* サポート */
-   193	.service-support {
-   194	    padding: 80px 0;
-   195	    background: var(--bg-light);
-   196	}
-   197	
-   198	.support-content {
-   199	    display: grid;
-   200	    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   201	    gap: 40px;
-   202	}
-   203	
-   204	.support-item {
-   205	    text-align: center;
-   206	}
-   207	
-   208	.support-item i {
-   209	    font-size: 3rem;
-   210	    color: var(--primary-color);
-   211	    margin-bottom: 20px;
-   212	}
-   213	
-   214	.support-item h3 {
-   215	    margin-bottom: 15px;
-   216	}
-   217	
-   218	/* 料金キャンペーン */
-   219	.pricing-campaign {
-   220	    padding: 40px 0;
-   221	    background: linear-gradient(135deg, #FFD700, #FFA500);
-   222	}
-   223	
-   224	.campaign-box {
-   225	    text-align: center;
-   226	    color: var(--white);
-   227	}
-   228	
-   229	.campaign-box i {
-   230	    font-size: 3rem;
-   231	    margin-bottom: 15px;
-   232	}
-   233	
-   234	.campaign-box h3 {
-   235	    font-size: 1.8rem;
-   236	    margin-bottom: 10px;
-   237	}
-   238	
-   239	.campaign-box p {
-   240	    font-size: 1.2rem;
-   241	}
-   242	
-   243	/* 料金プラン */
-   244	.pricing-plans {
-   245	    padding: 80px 0;
-   246	    background: var(--bg-light);
-   247	}
-   248	
-   249	.pricing-grid {
-   250	    display: grid;
-   251	    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-   252	    gap: 30px;
-   253	}
-   254	
-   255	.pricing-card {
-   256	    background: var(--white);
-   257	    border-radius: 12px;
-   258	    padding: 40px 30px;
-   259	    box-shadow: var(--shadow);
-   260	    position: relative;
-   261	}
-   262	
-   263	.pricing-card.featured {
-   264	    border: 3px solid var(--primary-color);
-   265	    transform: scale(1.05);
-   266	}
-   267	
-   268	.pricing-header {
-   269	    text-align: center;
-   270	    margin-bottom: 30px;
-   271	}
-   272	
-   273	.pricing-header h3 {
-   274	    font-size: 2rem;
-   275	    margin-bottom: 5px;
-   276	}
-   277	
-   278	.pricing-target {
-   279	    color: var(--text-gray);
-   280	    font-size: 1rem;
-   281	    margin-bottom: 10px;
-   282	}
-   283	
-   284	.pricing-description {
-   285	    color: var(--text-light);
-   286	    font-size: 0.9rem;
-   287	}
-   288	
-   289	.pricing-price {
-   290	    text-align: center;
-   291	    margin-bottom: 10px;
-   292	}
-   293	
-   294	.pricing-initial {
-   295	    text-align: center;
-   296	    color: var(--text-gray);
-   297	    font-size: 0.9rem;
-   298	    margin-bottom: 30px;
-   299	}
-   300	
-   301	.pricing-features {
-   302	    margin-bottom: 30px;
-   303	}
-   304	
-   305	.pricing-features h4 {
-   306	    font-size: 1rem;
-   307	    margin: 20px 0 10px;
-   308	    color: var(--primary-color);
-   309	}
-   310	
-   311	.pricing-features ul {
-   312	    list-style: none;
-   313	    padding-left: 0;
-   314	}
-   315	
-   316	.pricing-features ul li {
-   317	    padding: 8px 0;
-   318	    padding-left: 25px;
-   319	    position: relative;
-   320	    font-size: 0.95rem;
-   321	}
-   322	
-   323	.pricing-features ul li:before {
-   324	    content: "✓";
-   325	    position: absolute;
-   326	    left: 0;
-   327	    color: var(--primary-color);
-   328	}
-   329	
-   330	/* オプション */
-   331	.pricing-options {
-   332	    padding: 80px 0;
-   333	}
-   334	
-   335	.options-grid {
-   336	    display: grid;
-   337	    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   338	    gap: 30px;
-   339	}
-   340	
-   341	.option-card {
-   342	    background: var(--white);
-   343	    border: 2px solid var(--border-color);
-   344	    border-radius: 12px;
-   345	    padding: 30px;
-   346	    text-align: center;
-   347	    transition: all 0.3s;
-   348	}
-   349	
-   350	.option-card:hover {
-   351	    border-color: var(--primary-color);
-   352	    box-shadow: var(--shadow-lg);
-   353	}
-   354	
-   355	.option-card i {
-   356	    font-size: 2.5rem;
-   357	    color: var(--primary-color);
-   358	    margin-bottom: 15px;
-   359	}
-   360	
-   361	.option-card h3 {
-   362	    margin-bottom: 10px;
-   363	}
-   364	
-   365	.option-price {
-   366	    font-size: 1.8rem;
-   367	    font-weight: 700;
-   368	    color: var(--primary-color);
-   369	    margin: 15px 0;
-   370	}
-   371	
-   372	.option-price span {
-   373	    font-size: 1rem;
-   374	    color: var(--text-gray);
-   375	}
-   376	
-   377	/* 割引 */
-   378	.pricing-discounts {
-   379	    padding: 80px 0;
-   380	    background: var(--bg-light);
-   381	}
-   382	
-   383	.discounts-grid {
-   384	    display: grid;
-   385	    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   386	    gap: 30px;
-   387	}
-   388	
-   389	.discount-card {
-   390	    background: var(--white);
-   391	    padding: 30px;
-   392	    border-radius: 12px;
-   393	    box-shadow: var(--shadow);
-   394	    text-align: center;
-   395	}
-   396	
-   397	.discount-card i {
-   398	    font-size: 3rem;
-   399	    color: var(--primary-color);
-   400	    margin-bottom: 15px;
-   401	}
-   402	
-   403	.discount-card h3 {
-   404	    margin-bottom: 15px;
-   405	}
-   406	
-   407	/* 比較表 */
-   408	.pricing-comparison {
-   409	    padding: 80px 0;
-   410	}
-   411	
-   412	.comparison-table-wrapper {
-   413	    overflow-x: auto;
-   414	}
-   415	
-   416	.comparison-table {
-   417	    width: 100%;
-   418	    border-collapse: collapse;
-   419	    background: var(--white);
-   420	    box-shadow: var(--shadow);
-   421	    border-radius: 12px;
-   422	    overflow: hidden;
-   423	}
-   424	
-   425	.comparison-table th,
-   426	.comparison-table td {
-   427	    padding: 15px 20px;
-   428	    text-align: center;
-   429	    border-bottom: 1px solid var(--border-color);
-   430	}
-   431	
-   432	.comparison-table th {
-   433	    background: var(--text-dark);
-   434	    color: var(--white);
-   435	    font-weight: 600;
-   436	}
-   437	
-   438	.comparison-table th:first-child,
-   439	.comparison-table td:first-child {
-   440	    text-align: left;
-   441	    font-weight: 600;
-   442	}
-   443	
-   444	.comparison-table .featured-col {
-   445	    background: rgba(0, 102, 255, 0.05);
-   446	    color: var(--text-dark);
-   447	    font-weight: 600;
-   448	}
-   449	
-   450	.comparison-table i.fa-check {
-   451	    color: var(--primary-color);
-   452	    font-size: 1.2rem;
-   453	}
-   454	
-   455	/* カード追加機能 */
-   456	.card-feature {
-   457	    display: flex;
-   458	    align-items: center;
-   459	    gap: 8px;
-   460	    padding: 8px 0;
-   461	    font-size: 0.9rem;
-   462	    color: var(--text-gray);
-   463	}
-   464	
-   465	.card-feature i {
-   466	    color: var(--primary-color);
-   467	    font-size: 0.85rem;
-   468	}
-   469	
-   470	.overview-card {
-   471	    position: relative;
-   472	    overflow: hidden;
-   473	}
-   474	
-   475	.overview-card::before {
-   476	    content: '';
-   477	    position: absolute;
-   478	    top: 0;
-   479	    left: 0;
-   480	    width: 100%;
-   481	    height: 4px;
-   482	    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-   483	    transform: translateX(-100%);
-   484	    transition: transform 0.3s;
-   485	}
-   486	
-   487	.overview-card:hover::before {
-   488	    transform: translateX(0);
-   489	}
-   490	
-   491	/* ステップ詳細 */
-   492	.step-detail {
-   493	    margin-top: 15px;
-   494	    padding-top: 15px;
-   495	    border-top: 2px solid var(--border-color);
-   496	    font-size: 0.9rem;
-   497	    color: var(--text-gray);
-   498	    display: flex;
-   499	    align-items: center;
-   500	    gap: 8px;
-   501	}
-   502	
-   503	.step-detail i {
-   504	    color: var(--primary-color);
-   505	}
-   506	
-   507	.flow-step {
-   508	    position: relative;
-   509	}
-   510	
-   511	.flow-step::after {
-   512	    content: '';
-   513	    position: absolute;
-   514	    bottom: 0;
-   515	    left: 0;
-   516	    width: 0;
-   517	    height: 3px;
-   518	    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-   519	    transition: width 0.3s;
-   520	}
-   521	
-   522	.flow-step:hover::after {
-   523	    width: 100%;
-   524	}
-   525	
-   526	/* テクノロジーカード強化 */
-   527	.tech-card {
-   528	    position: relative;
-   529	    overflow: hidden;
-   530	}
-   531	
-   532	.tech-card::before {
-   533	    content: '';
-   534	    position: absolute;
-   535	    top: -2px;
-   536	    left: -2px;
-   537	    right: -2px;
-   538	    bottom: -2px;
-   539	    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-   540	    opacity: 0;
-   541	    transition: opacity 0.3s;
-   542	    z-index: -1;
-   543	    border-radius: 12px;
-   544	}
-   545	
-   546	.tech-card:hover::before {
-   547	    opacity: 1;
-   548	}
-   549	
-   550	.tech-card:hover {
-   551	    transform: translateY(-5px);
-   552	}
-   553	
-   554	/* サポート項目強化 */
-   555	.support-item {
-   556	    position: relative;
-   557	}
-   558	
-   559	.support-item::before {
-   560	    content: '';
-   561	    position: absolute;
-   562	    top: 0;
-   563	    left: 50%;
-   564	    transform: translateX(-50%);
-   565	    width: 0;
-   566	    height: 3px;
-   567	    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-   568	    transition: width 0.3s;
-   569	}
-   570	
-   571	.support-item:hover::before {
-   572	    width: 80%;
-   573	}
-   574	
-   575	/* レスポンシブ */
-   576	@media (max-width: 768px) {
-   577	    .page-hero h1 {
-   578	        font-size: 2rem;
-   579	    }
-   580	
-   581	    .flow-arrow {
-   582	        display: none;
-   583	    }
-   584	
-   585	    .pricing-card.featured {
-   586	        transform: scale(1);
-   587	    }
-   588	
-   589	    .card-feature {
-   590	        font-size: 0.85rem;
-   591	    }
-   592	}
+.page-hero {
+    background: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* サービス概要 */
+.service-overview {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.overview-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+
+.overview-card:hover {
+    transform: translateY(-5px);
+}
+
+.overview-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.overview-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.overview-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* サービス詳細 */
+.service-detail {
+    padding: 80px 0;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.detail-item {
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.detail-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.detail-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.detail-item h3 {
+    margin-bottom: 15px;
+}
+
+.detail-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.detail-item ul li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.detail-item ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* フロー */
+.service-flow {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.flow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.flow-step {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.step-number {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.flow-step h3 {
+    margin-bottom: 10px;
+}
+
+.flow-arrow {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* テクノロジー */
+.service-technology {
+    padding: 80px 0;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.tech-card {
+    background: var(--white);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.tech-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.tech-card h3 {
+    margin: 15px 0 10px;
+}
+
+/* サポート */
+.service-support {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.support-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.support-item {
+    text-align: center;
+}
+
+.support-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.support-item h3 {
+    margin-bottom: 15px;
+}
+
+/* 料金キャンペーン */
+.pricing-campaign {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+}
+
+.campaign-box {
+    text-align: center;
+    color: var(--white);
+}
+
+.campaign-box i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.campaign-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.campaign-box p {
+    font-size: 1.2rem;
+}
+
+/* 料金プラン */
+.pricing-plans {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.pricing-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.pricing-card.featured {
+    border: 3px solid var(--primary-color);
+    transform: scale(1.05);
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing-header h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.pricing-target {
+    color: var(--text-gray);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.pricing-description {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.pricing-price {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pricing-initial {
+    text-align: center;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.pricing-features {
+    margin-bottom: 30px;
+}
+
+.pricing-features h4 {
+    font-size: 1rem;
+    margin: 20px 0 10px;
+    color: var(--primary-color);
+}
+
+.pricing-features ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.pricing-features ul li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.pricing-features ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+/* オプション */
+.pricing-options {
+    padding: 80px 0;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.option-card {
+    background: var(--white);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.option-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.option-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.option-card h3 {
+    margin-bottom: 10px;
+}
+
+.option-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+.option-price span {
+    font-size: 1rem;
+    color: var(--text-gray);
+}
+
+/* 割引 */
+.pricing-discounts {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.discounts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.discount-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.discount-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.discount-card h3 {
+    margin-bottom: 15px;
+}
+
+/* 比較表 */
+.pricing-comparison {
+    padding: 80px 0;
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-table th {
+    background: var(--text-dark);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+    text-align: left;
+    font-weight: 600;
+}
+
+.comparison-table .featured-col {
+    background: rgba(0, 102, 255, 0.05);
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.comparison-table i.fa-check {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+/* カード追加機能 */
+.card-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+
+.card-feature i {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+}
+
+.overview-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.overview-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+}
+
+.overview-card:hover::before {
+    transform: translateX(0);
+}
+
+/* ステップ詳細 */
+.step-detail {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.step-detail i {
+    color: var(--primary-color);
+}
+
+.flow-step {
+    position: relative;
+}
+
+.flow-step::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    transition: width 0.3s;
+}
+
+.flow-step:hover::after {
+    width: 100%;
+}
+
+/* テクノロジーカード強化 */
+.tech-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+    border-radius: 12px;
+}
+
+.tech-card:hover::before {
+    opacity: 1;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+
+/* サポート項目強化 */
+.support-item {
+    position: relative;
+}
+
+.support-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    transition: width 0.3s;
+}
+
+.support-item:hover::before {
+    width: 80%;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+
+    .flow-arrow {
+        display: none;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+
+    .card-feature {
+        font-size: 0.85rem;
+    }
+}
